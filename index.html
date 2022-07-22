@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Dev test</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+</head>
+<body>
+    <!--Header-->
+    <section class="header">
+        <nav>
+            <a href="index.html"><img src="images/newlogo1.png" alt="Logo"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="">HOME</a></li>
+                    <li><a href="#service">SERVICES</a></li>
+                    <li><a href="#about">ABOUT</a></li>
+                    <li><a href="#contact">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <div class="text-box">
+            <h1>
+                Managing all your business needs.
+            </h1>
+            <p>
+                An independent business intended to serve you and your website needs.
+            </p>
+        </div>
+    </section>
+     <!--Services-->
+     <section class="Services" id="service">
+        <h1>Services we offer</h1>
+        <p>Anything from making websites to managing your companies backend. We do all the dirty work.</p>
+        <div class="row">
+            <div class="service-col">
+                <h3>Web design</h3>
+                <p>From simple sites for restaurants, to complex sites that require security, and apps, we can do it all. Depending on your needs, a team will be made ready for you and whatever website<span id="dots">...</span><span id="more"> needs you have. Regardless of size, every business should have a website
+                in this modern day where technology is king.</span></p>
+                <button onclick="readMore()" id="readBtn">Read more</button>
+            </div>
+            <div class="service-col">
+                <h3>Backend developement</h3>
+                <p>One of our specialties is database design and development from scratch.  Upgrading your service or production system from manual or spreadsheet system to a relational database that interacts<span id="dots2">...</span><span id="more2"> with all the aspects of your business, regardless of the size.
+                    There are many benefits with converting your manual systems to automation including:<br>
+                        <b>Automated business processes</b><br>
+                        <b>Increased efficiency and accuracy</b><br>
+                        <b>Prevention of unforeseen losses</b><br>
+                        <b>Point Of sale tracking</b><br>
+                        <b>Future projection analysis reporting</b><br>
+                        <b>Adhoc querying of business data</b><br>
+                        <b>Ability to create ERP to help track finance, HR, production, services and allocate resources accurately</b><br>
+                        <b>Archive your business data if needed at later time for comparison of past present and predict future revenues</b><br>
+                        <b>User friendly front-end</b><br>
+                        <b>Ongoing support of your business' developed systems</b><br>
+                    </span>
+                     </p>
+                <button onclick="readMore2()" id="readBtn2">Read more</button>
+            </div>
+            <div class="service-col">
+                <h3>PowerBi reporting</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+            </div>
+        </div>
+    </section>
+    <!--About-->
+    <section class="about" id="about">
+        <h1>What we're about</h1>
+        <p><b>*company*.Easy. Simple. Happy.</b></p>
+        <div class="row">
+            <div class="about-col">
+                <img src="images/washington.png" alt="building1">
+            </div>
+            <div class="about-col">
+                <h3>Mission</h3>
+                <p>At <b>*company*</b>, we strive to offer our clients <b>easy</b> and <b>simple</b> solutions for their day to day and long term visions.
+                    With a team catered to your needs, *company* can tackle web technology, mobile technology, trading supply chain management, E-commerce, and internal applications.
+                </p>
+                <h3>About us</h3>
+                <p> We are a family owned startup business who are client-oriented and believe in <b>simplifying</b> lives, not <b>complicating</b> them.  
+                    We believe that understanding client needs will provide us with the insight to better their lives, increase revenue, and leave them <b>happy</b>.</p>
+                <p>In this unsafe world where we see breaches at all levels of corporations, we believe security and confidentiality of your data are first priority.</p>
+            </div>
+        </div>
+    </section>
+    <!--Contact-->
+    <section class="contact" id="contact">
+        <h1>Connect with us</h1>
+        <p>We would love to talk about any questions you may have. Feel free to let us know.</p>
+        <div class="contact-box">
+            <div class="contact-left">
+                <h3>Send your request</h3>
+                <form>
+                    <div class="input-row">
+                        <div class="input-group">
+                            <label>Name</label>
+                            <input type="text" id="name" name="Name" placeholder="John Smith" required>
+                        </div>
+                        <div class="input-group">
+                            <label>Phone</label>
+                            <input type="text" id="phone" name="Phone" placeholder="780-437-7723" required>
+                        </div>
+                    </div>
+                        <div class="input-row">
+                            <div class="input-group">
+                                <label>Email</label>
+                                <input type="email" id="email" name="Email" placeholder="JohnS@gmail.com" required>
+                            </div>
+                            <div class="input-group">
+                                <label>Subject</label>
+                                <input type="text" id="subject" name="Subject" placeholder="Website consultation">
+                            </div>
+                        </div>
+                        <label>Message</label>
+                        <textarea id="message" name="Message" rows="5" placeholder="Your Message"></textarea>
+                        <button type="submit">SEND</button>
+                </form>
+            </div>
+            <div class="contact-right">
+                <h3>Reach us at:</h3>
+                <table>
+                    <tr>
+                        <td>Email:</td>
+                        <td>mhamze@ualberta.ca</td>
+                    </tr>
+                    <tr>
+                        <td>Phone:</td>
+                        <td>780-728-9323</td>
+                    </tr>
+                </table>
+                <p>Do not hesitate to contact us for free consulting of your business inquiries and future plans. Our professional team will help you determine your business requirements and needs.</p>
+            </div>
+        </div>
+    </section>
+<!--Footer-->
+    <div class="footer-basic">
+        <footer>
+            <ul class="list-inline">
+                <li class="list-inline-item"><a href="#">Home</a></li>
+                <li class="list-inline-item"><a href="#service">Services</a></li>
+                <li class="list-inline-item"><a href="#about">About</a></li>
+                <li class="list-inline-item"><a href="#">Terms</a></li>
+                <li class="list-inline-item"><a href="#">Privacy Policy</a></li>
+            </ul>
+            <p class="copyright">Company Name © 2022</p>
+        </footer>
+    </div>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js"
+    integrity="sha512-eP6ippJojIKXKO8EPLtsUMS+/sAGHGo1UN/38swqZa1ypfcD4I0V/ac5G3VzaHfDaklFmQLEs51lhkkVaqg60Q=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  ></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/ScrollTrigger.min.js" 
+  integrity="sha512-v8B8T8l8JiiJRGomPd2k+bPS98RWBLGChFMJbK1hmHiDHYq0EjdQl20LyWeIs+MGRLTWBycJGEGAjKkEtd7w5Q==" 
+  crossorigin="anonymous"
+   referrerpolicy="no-referrer"></script>
+   <script src="./java.js"></script>
+
+</body>
+</html>
